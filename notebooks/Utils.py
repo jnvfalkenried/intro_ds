@@ -15,7 +15,7 @@ def load_sms():
     import csv
     lines = []
     hamspam = {'ham': 0, 'spam': 1}
-    with open('data/spam.csv', mode='r',encoding='latin-1') as f:
+    with open('../data/spam.csv', mode='r',encoding='latin-1') as f:
         reader = csv.reader(f)
         # When using the csv reader, each time you use the function
         # next on it, it will spit out a list split at the ','
